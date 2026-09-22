@@ -1,5 +1,9 @@
 <style>
-    body {
+   
+
+
+   
+   body {
    background-image: url('PICNIC.jpg');
    background-size: cover;
    background-repeat: no-repeat;
@@ -12,25 +16,30 @@
     margin-left: 220px;
     margin-top: 250px;
     background-attachment: fixed;
+    display: inline-block;
+    
     
 }
 
 .sunImage{
     margin-right: 100px;
     margin-bottom: 100px;
+    display: inline-block;
+    position: relative;
     
 }
 
 .walletImage{
     margin-left: 430px;
     margin-right: 1350px;
-    background-attachment: fixed;
     transform: translateY(-100px);
+    background-attachment: fixed;
+    display: inline-block;
     
 }
 
 .airpodsImage{
-    margin-left: 700px;
+    margin-left: 600px;
     background-attachment: fixed;
     transform: translateY(-180px);
 }
@@ -38,16 +47,38 @@
 .handImage{
     margin-right: 100px;
     background-attachment: fixed;
+    transform: translateY(-120px);
 }
 
 .journalImage{
-    margin-right: 100px;
+    transform: translateY(-330px);
+    animation-fill-mode: forwards;
+    top: 100px;
+}
+
+.glossImage{
+    margin-left: -80px;
     background-attachment: fixed;
+    transform: translateY(-330px);
+}
+
+.bankImage{
+    transform: translateX(-450px);
+    position: relative; 
+    top: -330px;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
 }
 
 
-
 </style>
+
 
 <a href = "camera.html">
     <img src = "cam.png" width = "270" height = "200" class = "camImage">
@@ -70,11 +101,15 @@
 </a>
 
 <a href = "hand.html">
-    <img src = "hand.png" width = "200" height = "200" class = "handImage">
+    <img src = "hand.png" width = "200" height = "250" class = "handImage">
 </a>
 
 <a href = "journal.html">
     <img src = "journal.png" width = "200" height = "200" class = "journalImage">
+</a>
+
+<a href = "bank.html">
+    <img src = "powerbank.png" width = "200" height = "200" class = "bankImage">
 </a>
 
 

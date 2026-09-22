@@ -1,0 +1,76 @@
+.container:hover{
+    animation: wiggle 0.5s infinite;
+}
+   
+.container{
+    display: inline-block;
+    padding: 20px;
+    animation: wiggle 0.5s infinite;
+}
+
+
+   
+ body {
+   background-image: url('PICNIC.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   position: absolute;
+   margin: 0;
+}
+
+.camImage{
+    margin-left: 220px;
+    margin-top: 250px;
+    background-attachment: fixed;
+    
+}
+
+.sunImage{
+    margin-right: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.walletImage{
+    margin-left: 430px;
+    margin-right: 1350px;
+    transform: translateY(-100px);
+    background-attachment: fixed;
+    animation-fill-mode:both
+    
+}
+
+.airpodsImage{
+    margin-left: 600px;
+    background-attachment: fixed;
+    transform: translateY(-180px);
+}
+
+.handImage{
+    margin-right: 100px;
+    background-attachment: fixed;
+    transform: translateY(-120px);
+}
+
+.journalImage{
+    transform: translateY(-330px);
+    animation-fill-mode: forwards;
+}
+
+.glossImage{
+    margin-left: -80px;
+    background-attachment: fixed;
+    transform: translateY(-330px);
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+
