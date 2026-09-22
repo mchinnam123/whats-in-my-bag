@@ -1,0 +1,67 @@
+
+div{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button{
+    height: 80px;
+    width: 400px;
+    color:rgb(243, 240, 236);
+    font-family:'Courier New', Courier, monospace; 
+    font-weight:bold;
+    font-size: 25px;
+    background-color: rgb(132, 147, 177); 
+    border-radius: 30px;
+    border:2px solid rgb(125, 132, 177);
+    
+}
+
+.wiggle-btn:hover{
+    animation:wiggle 2s infinite;
+}
+.wiggle-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: none;
+    transform-origin: 50% 8em;
+    animation-delay: 1s;
+}
+
+@keyframes wiggle{
+    0%,
+    5%{
+        transform: rotateZ(0);
+    }
+    15%{
+    transform: rotateZ(3deg);
+    }
+    20%{
+        transform: rotateZ(-3deg);
+    }
+    25%{
+        transform: rotateZ(3deg);
+     }
+     30%{
+        transform: rotateZ(-3deg);
+     }
+     100%{
+        transform: rotateZ(0);
+     }
+
+     }
+     
+
+
+
+
+
+   
+   
+  
